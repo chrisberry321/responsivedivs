@@ -1,28 +1,64 @@
-*,
-*::before,
-*::after {
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1vmin;
+}
+
+*, *::before, *::after {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
 }
-/* For testing only */
+
 
 *:not(body):not(html) {
   box-sizing:border-box;
   border:1px dashed #000;
 }
 
-.columns {
-  min-height: 100px !important;
-}
-
-/* End for testing */
-
 body {
   background-color: #F0F0F0;
+  height: 140em;
 }
 
-@media screeen only and (max-width: 385px) {
+.columns {
+  width: 95%;
+  height: 50%;
+  margin: 10px 10px 0;
+  background-color: blue;
+}
 
-  
+.project, .press {
+  width: 95%;
+  height: 22%;
+  margin: 10px 10px 0;
+  background-color: yellow;
+}
+
+@media screen and (min-width:740px) {
+  .columns {
+    height: 60vh;
+  }
+  .project, .press {
+    display: inline-block;
+    max-width: 46%;
+    height: 37vh;
+  }
+}
+
+@media screen and (min-width:1040px) {
+  .columns {
+    float: left;
+    height: 96vh;
+    width: 68%;
+
+  }
+
+  .project, .press {
+    float: right;
+    height: 47.5vh;
+    width: 28%;
+
+  }
 }
