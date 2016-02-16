@@ -1,0 +1,60 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1vmin;
+}
+
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+
+*:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}
+
+body {
+  background-color: #F0F0F0;
+  height: 140em;
+}
+
+header {
+  background-color: blue;
+  width: 96%;
+  height: 20%;
+  margin: 0 10px 10px;
+  max-height: 180px;
+
+}
+
+div {
+  background-color: black;
+  margin: 15px 20px 0;
+  width: 91%;
+  height: 35%;
+  max-height: 300px;
+}
+
+@media screen and (min-width:780px) {
+  div {
+    float: left;
+    width: 42%;
+    margin: 25px 25px 0;
+  }
+}
+
+@media screen and (min-width:1040px) {
+  header {
+    width: 98%;
+  }
+  div {
+    width: 28%;
+    max-width: 485.41px;
+  }
+
+
+}
