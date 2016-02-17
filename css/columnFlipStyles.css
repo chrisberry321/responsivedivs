@@ -1,0 +1,137 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1vmin;
+}
+
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/**:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}*/
+
+body {
+  background-color: white;
+  height: 100vh;
+  max-width: 1200px;
+}
+.icon {
+  font-size: 25px;
+  float: left;
+  padding-left: 40px;
+  max-width: 400px;
+}
+header {
+  position: relative;
+}
+ul {
+  clear: both;
+  list-style: none;
+  min-width: 250px;
+}
+li {
+  width: 32%;
+  font-size: 20px;
+  float: left;
+  padding: 5px 10px;
+  background-color: grey;
+  text-align: center;
+}
+.headerText h1{
+  margin-top: 150px;
+  padding: 10px 1em 0 1em;
+  font-size: 25px;
+  margin-bottom: 0;
+}
+.headerText p{
+  padding: 0 1em 1em 1em;
+  font-size: 25px;
+  margin-top: 0;
+}
+.headerImage img{
+  width: 100vw;
+  max-width: 700px;
+  margin-bottom: 4%;
+  min-width: 320px;
+}
+.imageColumn img {
+  width: 85%;
+  margin-left: 5%;
+}
+.paragraphColumn {
+  font-size: 16px;
+  padding: 0 10px;
+}
+.twitterColumn img {
+  float: left;
+  height: 60px;
+  padding: 5px 5px 5px 0;
+}
+.twitterColumn {
+  font-size: 12px;
+  padding: 0 10px;
+}
+
+@media screen and (min-width:760px) {
+  .imageColumn img {
+    float: left;
+    width: 26%;
+    clear: right;
+  }
+  .paragraphColumn {
+    clear: both;
+    float: left;
+    width: 48%;
+  }
+  .twitterColumn {
+    margin: 11px;
+    float: right;
+    width: 49%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+
+  .headerText {
+    width: 38%;
+    float: left;
+    clear: both;
+  }
+
+  .headerImage img {
+    float: right;
+    width: 55%;
+  }
+.imageColumn {
+  height: 200px;
+  width: 100vw;
+  background-color: red;
+}
+
+  .imageColumn img{
+    clear: right;
+    width: 20%;
+  }
+  ul {
+    margin-top: 0;
+    width: 60vw;
+  }
+  li {
+    width: 16%;
+    margin-top: 0;
+  }
+  header {
+    bottom: 39px;
+    left: 350px;
+  }
+  .twitterColumn {
+    font-size: 18px;
+  }
+
+}
